@@ -1,0 +1,23 @@
+26/03/2025
+CREAMOS LA BASE DE DATOS
+
+    CREATE DATABASE lsv;
+    USE lsv;
+    CREATE TABLE usuari (
+        ID INT(11) AUTO_INCREMENT PRIMARY KEY,
+        nom VARCHAR(50) NOT NULL,
+        password VARCHAR(255) NOT NULL,
+        mail VARCHAR(255) NULL,
+        telf VARCHAR(255) NULL
+    );
+
+    CREAMOS LOS FICHEROS DE CONEXION
+    login.php       (iniciar sesion)
+    register.php    (registrar usuario)
+    protected.php   (para proteccion)
+    logout.php      (salir de la sesion)
+
+    CREAMOS FICHEROS PARA LA WEB
+    geo.php (aqui ira la informacion de la web)
+    geo.css(aqui iran los estilos)
+    geo.js (aqui iran las funciones)
