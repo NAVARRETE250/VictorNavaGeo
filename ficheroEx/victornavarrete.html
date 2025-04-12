@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrar el Número Mayor con Doble For</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Encontrar el Número Mayor y su Posición</h1>
+    <p>El array predefinido es: [23, 6, 343, 857, 86, 44, 54, 1, 4, 87, 7272, 7376, 87]</p>
+    <button onclick="calculate()">Calcular</button>
+
+    <div class="result" id="result"></div>
+
+    <script>
+        // Función para encontrar el número mayor y su posición usando doble for
+        function findMaxWithDoubleFor(arr) {
+            if (arr.length === 0) {
+                return { max: null, position: -1 };
+            }
+
+            let max = arr[0];
+            let position = 0;
+
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr.length; j++) {
+                    if (arr[j] > max) {
+                        max = arr[j];
+                        position = j;
+                    }
+                }
+            }
+
+            return { max, position };
+        }
+
+        // Array predefinido
+        const predefinedArray = [23, 6, 343, 857, 86, 44, 54, 1, 4, 87, 7272, 7376, 87];
+
+        // Función para calcular y mostrar el resultado
+        function calculate() {
+            // Llamar a la función para encontrar el máximo
+            const result = findMaxWithDoubleFor(predefinedArray);
+
+            // Mostrar el resultado en la página
+            document.getElementById('result').innerHTML = `
+                <p>Número Mayor: ${result.max}</p>
+                <p>Posición: ${result.position}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
