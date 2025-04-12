@@ -1,0 +1,182 @@
+:root {
+    --color-fondo: #eff7b4; /* Azul claro */
+    --color-secundario: #0b0499; /* Verde claro */
+    --fuente-principal: 'Arial', sans-serif;
+    --espaciado: 20px;
+
+    
+}
+h3{
+    
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+h2{
+    
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+
+html, body , h1{
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-principal);
+
+}
+
+header {
+    background-color: var(--color-fondo);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    color: white;
+}
+
+.menusss {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 950;
+    font-size: 15px;
+    border: 2px solid black;
+}
+
+.menusss a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.imagen-log {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Apila las cajas verticalmente */
+    align-items: center; /* Centra las cajas horizontalmente */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    max-width: 1200px; /* Límite de ancho */
+}
+.formitas {
+    display: flex; /* Dividir en dos columnas */
+    gap: 20px; /* Espacio entre las columnas */
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjetas {
+    flex: 75%; /* Ocupa una columna */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.detalles {
+    flex: 25%; /* Ocupa la otra columna */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none; /* Oculto inicialmente */
+}
+
+.figura-card {
+    margin: 5px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: visible; /* Mostrar todo el contenido */
+    border: 2px solid white;
+    width: 150px; /* Ancho fijo */
+    max-height: 200px; /* Altura máxima */
+}
+
+.figura-card:hover {
+    transform: scale(1.05); /* Ampliar ligeramente al pasar el ratón */
+}
+
+.figura-card img {
+    max-width: 80px; /* Reducimos el tamaño de las imágenes */
+    height: auto;
+    border-radius: 5px;
+}
+
+.details-panel {
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Alinearlo a la derecha */
+    top: 50px; /* Ajusta según sea necesario */
+    right: 20px; /* Alinearlo a la derecha */
+    display: none; /* Oculto inicialmente */
+}
+
+.hidden {
+    display: none;
+}
+
+.benefit-box {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 980px;
+}
+
+.benefit-text {
+    flex: 2; /* Hace que el texto ocupe más espacio */
+    padding: 20px;
+}
+
+.benefit-image {
+    max-width: 300px;
+    width: auto;
+    height: auto;
+}
+.benefit-box.reverse{
+    flex-direction: row-reverse;
+}
+
+section{
+    align-items: center;
+    justify-content: center; /* Centramos las tarjetas */
+    flex: 1;
+    padding: 20px; /* Reducido */
+    margin-left: 20px;
+    margin-right: 20px;
+}
